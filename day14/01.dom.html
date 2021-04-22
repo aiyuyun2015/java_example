@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Untitled Document</title>
+        <title>Test</title>
         <link rel="stylesheet" type="text/css" href="style/css.css" />
         <script type="text/javascript">
             /*
@@ -166,24 +166,26 @@
                 myClick("btn08", button8_inner_func);
 
                 //读取#username的value属性值
-                myClick("btn09", function() {
+                var button9_inner_func = function() {
                     //获取id为username的元素
                     var um = document.getElementById("username");
                     //读取um的value属性值
                     //文本框的value属性值，就是文本框中填写的内容
                     alert(um.value);
-                });
+                }
+                myClick("btn09", button9_inner_func);
 
                 //设置#username的value属性值
-                myClick("btn10", function() {
+                var button10_inner_func =  function() {
                     //获取id为username的元素
                     var um = document.getElementById("username");
 
                     um.value = "今天天气真不错~~~";
-                });
+                }
+                myClick("btn10", button10_inner_func);
 
                 //返回#bj的文本值
-                myClick("btn11", function() {
+                var button11_inner_func = function() {
                     //获取id为bj的元素
                     var bj = document.getElementById("bj");
 
@@ -195,7 +197,8 @@
 					alert(fc.nodeValue);*/
 
                     alert(bj.firstChild.nodeValue);
-                });
+                }
+                myClick("btn11", button11_inner_func);
             };
         </script>
     </head>
