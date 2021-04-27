@@ -44,6 +44,9 @@
 
                 //为ul绑定一个单击响应函数
                 u1.onclick = function(event) {
+                    //alert(this)
+                    // note, if we use this here, then since u1.onclick is assigned with
+                    // function, thus, "this" is u1, the object is UL, unordered list
                     event = event || window.event;
 
                     /*
