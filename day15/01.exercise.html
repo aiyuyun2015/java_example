@@ -67,6 +67,7 @@
 
 					//获取用户添加的员工信息
 					//获取员工的名字
+					// the input inside the table, will be the value here
 					var name = document.getElementById("empName").value;
 					//获取员工的email和salary
 					var email = document.getElementById("email").value;
@@ -126,6 +127,9 @@
 					//获取table
 					var employeeTable = document.getElementById("employeeTable");
 					//获取employeeTable中的tbody
+					// if the below line is not added, instead, add to table, then
+					// the display will be fine, but new entry will be added in 
+					// table, not tbody
 					var tbody = employeeTable.getElementsByTagName("tbody")[0];
 					//将tr添加到tbodye中
 					tbody.appendChild(tr);
